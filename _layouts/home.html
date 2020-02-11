@@ -5,7 +5,7 @@ layout: default
 {%- if site.posts.size > 0 -%}
 	<!-- Featured post aka. latest -->
 	{% assign featured = site.posts.first %}
-	<h2 class="featured-heading">Featured Post: {{ featured.title }}</h2>
+	<h2 class="featured-heading">Latest: {{ featured.title }}</h2>
 	<hr>
 	{{ featured.content }}
 {%- endif -%}
