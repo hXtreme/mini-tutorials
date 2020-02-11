@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{%- if site.posts.size > 0 -%}
+	<!-- Featured post aka. latest -->
+	{% assign featured = site.posts.first %}
+	<h2 class="featured-heading">Featured Post: {{ featured.title }}</h2>
+	<hr>
+	{{ featured.content }}
+{%- endif -%}
+
+
+{%- if site.posts.size > 1 -%}
+	<div id="right-banner-content">
+		{%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+		<h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+		<ul class="post-list">
+			{%- for post in site.posts offset:1 limit:10 -%}
+			{%- if post.mute == true -%}
+
+			{%- endif -%}
+			<li>
+				<span class="post-meta">{{ post.date | date: date_format }}</span>
+				<h3>
+		            <a class="post-link" href="{{ post.url | relative_url }}">
+		              {{ post.title | escape }}
+		            </a>
+		        </h3>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+{%- endif -%}
+
+
+
+
+{{ content }}

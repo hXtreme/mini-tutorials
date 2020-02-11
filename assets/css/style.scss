@@ -1,0 +1,60 @@
+---
+---
+
+@import "jekyll-theme-midnight";
+
+.body {
+	display: grid;
+	grid-template-columns: 2fr 7fr 2fr;
+}
+
+.column {
+	margin: 0 auto;
+}
+
+section .credits {
+	font-size: 11px;
+	font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color: #696969;
+	margin-top: -10px;
+}
+
+section .credits.left {
+	float: left;
+}
+
+section .credits.right {
+	float: right;
+}
+
+@media print, screen and (max-width: 720px) {
+	.body{
+		grid-template-columns: 1fr;
+	}
+	.column.left > section {
+		padding-bottom: 0;
+	}
+	.column.mid > section {
+		padding: 0; 
+		margin-top: 1em;
+		margin-bottom: 2em;
+	}
+	.column.right > section {
+		padding-top: 0;
+	}
+	.credits { 
+		display: block;
+		width: 100%;
+		line-height: 30px;
+		text-align: center;
+	}
+  	.credits .left {
+  		float: none;
+  		display: block;
+  	}
+  	.credits .right {
+  		float: none;
+  		display: block;
+  	}
+}

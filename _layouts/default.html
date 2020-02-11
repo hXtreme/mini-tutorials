@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    {%- include head.html -%}
+    <body>
+        {% if page.show_top_banner %}
+            {%- include top-banner.html -%}
+        {% else %}
+            <style type="text/css">
+                section { margin-top: 20px; }
+            </style>
+        {% endif %}
+        <div class="body">
+            <div class="column left">
+                <section id="left-banner">
+                    <!-- Create a div anywhere with id=left-banner-content and it will be placed here. -->
+                </section>
+            </div>
+            <div class="wrapper column mid">
+                <section>
+                    {%- include title.html -%}
+                    {{ content }}
+                    {%- include footer.html -%}
+                </section>
+            </div>
+            <div class="column right">
+                <section id="right-banner">
+                    <!-- Create a div anywhere with id=right-banner-content and it will be placed here. -->
+                </section>
+            </div>
+        </div>
+        {%- include analytics.html -%}
+        
+        <script type="text/javascript" src="{{ '/assets/js/extra-content-blocks.js' | relative_url }}"></script>
+  </body>
+</html>
