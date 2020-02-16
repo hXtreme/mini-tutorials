@@ -1,0 +1,14 @@
+name: CI - Posts
+# CI workflow to avoid bugs in tutorials.
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Shellcheck Action
+      uses: fearphage/shellcheck-action@0.1.0-debug1
