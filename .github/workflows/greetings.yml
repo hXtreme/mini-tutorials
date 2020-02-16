@@ -9,5 +9,5 @@ jobs:
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: 'Thank you for opening your first issue on mini-tutorials. We''re glad to have you here.'
-        pr-message: 'Thank you so much for contributing to mini-tutorials! We''ll try to take a look at it as soon as possible till then, please make sure that you''ve read the Code of Conduct.'
+        issue-message: "Thank you for opening your first issue on mini-tutorials. We're glad to have you here."
+        pr-message: "Thank you so much for contributing to mini-tutorials! We'll try to take a look at it as soon as possible till then, please make sure that you've read the Code of Conduct."
