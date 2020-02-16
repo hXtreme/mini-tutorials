@@ -12,5 +12,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Shellcheck Action
       uses: fearphage/shellcheck-action@0.1.0-debug1
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
