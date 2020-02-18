@@ -20,7 +20,7 @@ Describe the steps that we can take to fix this:
 4. Resolve error '...'
 
 **Possible solutions**
-Describe what you think can be done to reolve this problem.
+Describe what you think can be done to resolve this problem.
 
 **Screenshots**
 If applicable, add screenshots to help explain the problem.
