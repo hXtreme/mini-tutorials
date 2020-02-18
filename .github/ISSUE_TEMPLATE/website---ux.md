@@ -1,5 +1,5 @@
 ---
-name: User experience
+name: Website - User experience
 about: Suggest an idea to improve user's experience with the website
 title: "[UX] Short title"
 labels: ux

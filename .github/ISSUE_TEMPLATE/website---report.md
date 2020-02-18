@@ -1,5 +1,5 @@
 ---
-name: Report - website
+name: Website - Report
 about: Create a report to help us improve the website
 title: "[Improve Website] Short Description"
 labels: improve-website

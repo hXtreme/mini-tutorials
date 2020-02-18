@@ -1,5 +1,5 @@
 ---
-name: Feature request
+name: Website - Feature request
 about: Suggest an idea to improve the website
 title: "[Feature Request]"
 labels: feature

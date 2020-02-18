@@ -1,5 +1,5 @@
 ---
-name: Report - tutorial
+name: Tutorial - Report
 about: Report a problem regarding a tutorial
 title: "[Improve Tutorial] Tutorial Title — Short description"
 labels: improve-tutorial
