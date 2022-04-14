@@ -2,13 +2,9 @@
 <html lang="{{ site.lang | default: "en-US" }}">
     {%- include head.html -%}
     <body>
-        {% if page.show_top_banner %}
-            {%- include top-banner.html -%}
-        {% else %}
-            <style type="text/css">
-                section { margin-top: 20px; }
-            </style>
-        {% endif %}
+        <style type="text/css">
+            section { margin-top: 20px; }
+        </style>
         <div class="body">
             <div class="column left">
                 <section id="left-banner">
