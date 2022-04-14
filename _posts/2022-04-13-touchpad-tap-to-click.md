@@ -64,7 +64,9 @@ In the output check to see if `TapButton1`, `TapButton2`, and `TapButton3` are s
 If they aren't, you can set them with:
 
 ```sh
-synclient TapButton1=1 TapButton2=1 TapButton3=1
+synclient TapButton1=1 TapButton2=3 TapButton3=2
 ```
 
 After this you should be able to tap-to-click using your touchpad.
+
+If you would like to make this setting permanent you can add it to `/usr/share/X11/xorg.conf.d/50-synaptics.conf` file.
